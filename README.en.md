@@ -15,7 +15,7 @@ Picked colors can be named, grouped into multiple sets, and exported as JSON.
 Analysis reports can also be exported as rasterized PDFs. Images remain on the
 local device and are not uploaded for analysis.
 
-**[Download v0.4.3 →](https://github.com/tsukasa-art/teinte/releases/tag/v0.4.3)**<br>
+**[Download v0.4.4 →](https://github.com/tsukasa-art/teinte/releases/tag/v0.4.4)**<br>
 Release artifacts are available for macOS (Apple Silicon and Intel) and Windows.
 
 ## Highlights

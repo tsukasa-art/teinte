@@ -1,6 +1,6 @@
 [package]
 name = "teinte"
-version = "0.4.3"
+version = "0.4.4"
 description = "Teinte – Color analysis tool (Tauri + Vue)"
 authors = ["you"]
 edition = "2021"
