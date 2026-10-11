@@ -1,3 +1,5 @@
+<img src="src-tauri/icons/128x128@2x.png" width="96" height="96" alt="Teinte app icon">
+
 # Teinte
 
 [日本語](README.md)
