@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import appMarkUrl from "../assets/app-mark.svg";
+
 defineProps<{ appDisplayName: string }>();
 </script>
 
@@ -6,7 +8,7 @@ defineProps<{ appDisplayName: string }>();
   <header class="header" role="banner">
     <div class="header-inner">
       <div class="header-brand">
-        <span class="header-mark" aria-hidden="true" />
+        <img class="header-mark" :src="appMarkUrl" alt="" aria-hidden="true" />
         <div class="header-titles">
           <h1 class="title">{{ appDisplayName }}</h1>
         </div>
@@ -38,24 +40,14 @@ defineProps<{ appDisplayName: string }>();
   gap: 0.85rem;
 }
 
+/* アプリのアイコンと同じ絵（角丸は 185/824 ≒ 22.5%） */
 .header-mark {
+  display: block;
   width: 2.5rem;
   height: 2.5rem;
   flex-shrink: 0;
-  border-radius: 12px;
-  background: conic-gradient(
-    from 200deg,
-    #f87171,
-    #fbbf24,
-    #4ade80,
-    #38bdf8,
-    #818cf8,
-    #e879f9,
-    #f87171
-  );
-  box-shadow:
-    0 2px 6px rgba(0, 0, 0, 0.35),
-    inset 0 1px 0 rgba(255, 255, 255, 0.35);
+  border-radius: 22.5%;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.35);
 }
 
 .header-titles {
@@ -69,15 +61,12 @@ defineProps<{ appDisplayName: string }>();
   max-width: 1200px;
   margin: 0 auto;
   border-radius: 2px 2px 0 0;
+  /* アイコンの3つの丸と同じ色・同じ比（ベース 55.3：アソート 37.0：アクセント 7.8） */
   background: linear-gradient(
     90deg,
-    #6366f1,
-    #8b5cf6,
-    #ec4899,
-    #f97316,
-    #eab308,
-    #22c55e,
-    #0ea5e9
+    #afd2f9 0 55.3%,
+    #d6b7b2 55.3% 92.3%,
+    #637191 92.3% 100%
   );
   opacity: 0.92;
 }
